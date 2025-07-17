@@ -1,0 +1,5 @@
+- name: Just check ping
+  hosts: 
+  tasks:
+  - name: check ping
+    ansible.builtin.ping:
