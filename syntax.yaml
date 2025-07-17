@@ -1,0 +1,98 @@
+books:
+ - title: bhagwadgeetha
+   author: vyasa maharshi
+   year: 5000 years back
+ - title: Mahabharatham
+   author: vyasa
+   year: 6000 years back
+ - title: ramayanam
+   author: valmiki
+   year: 1000 years back  
+   
+
+Movies:
+  - title: MAghadheera
+    director: rajamouli
+    genere:
+     - Periodcial
+     - Fantasy
+     - Action   
+  - title: Gabbarsingh
+    director: Harish shankar
+    genere:
+     - comedy
+     - commerical
+     - Action 
+
+
+Universities:
+  - name: OXford
+    location: UK
+    courses:
+     - name: maths
+       duration: 10hrs
+     - name: social
+       duration: 10hrs
+  - name: stanford
+    location: USA
+    courses:
+     - name: science
+       duration: 10hrs
+     - name: english
+       duration: 10hrs
+  - name: Aditya 
+    location: surampalem 
+    courses:   
+     - name: DevOps
+       duration: 100hrs
+     - name: AI
+       duration: 90hrs
+
+
+
+courses: 
+ - title: DevOps
+   instructor: Siva Kumar
+   duration: 120 Hours
+   students: 
+    - name: surya
+      email: NA 
+      progress: NA
+    - name: rama
+      email: NA
+      progress: NA
+ - title: SRE
+   instructor: Abhishek
+   duration: 190 Hours
+   students: 
+    - name: surya
+      email: NA 
+      progress: NA
+    - name: rama
+      email: NA
+      progress: NA    
+
+smartphoes:
+ - brand: MI 
+   model: 2024 
+   specs: 
+    processor: NA
+    ram: NA
+    storage: NA
+    camera:ś
+     rear: NA
+     front: NA
+
+
+ - brand: MI 
+   model: 2024 
+   specs: 
+    processor: NA
+    ram: NA
+    storage: NA
+    camera:
+     rear: NA
+     front: NA     
+
+
+ 
