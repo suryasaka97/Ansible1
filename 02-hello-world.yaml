@@ -1,0 +1,7 @@
+- name: print hello world
+  hosts: local
+  connection: local #no need to provide username
+  tasks:
+  - name: hello world
+    ansible.builtin.debug:
+     msg: "hello-world"
