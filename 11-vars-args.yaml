@@ -4,5 +4,5 @@
   tasks:
   - name: calling from arguments
     ansible.builtin.debug:
-     msg: "printing the argument passed variables {{ course }} and duration {{ 10 hours }}"
+     msg: "printing the argument passed variables {{ course }} and duration {{ duration }}"
 
