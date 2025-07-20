@@ -1,0 +1,8 @@
+- name: calling variables from arguments
+  hosts: local
+  connection: local
+  tasks:
+  - name: calling from arguments
+    ansible.builtin.debug:
+     msg: "printing the message"
+

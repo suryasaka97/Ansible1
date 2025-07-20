@@ -3,4 +3,4 @@
   tasks:
   - name: pratcing calling variablers from inventory, single host
     ansible.builtin.debug:
-     msg: "im calling this name: {{ course }} and duration : {{ duration }} from the inventory file"
+     msg: "im calling this course_name: {{ course }} and duration : {{ duration }} from the inventory file"
