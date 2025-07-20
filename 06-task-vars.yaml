@@ -10,7 +10,7 @@
   - name: apply global level variables
     ansible.builtin.debug:
       msg: "hello {{ name }} , course: {{ course }}, duration: {{ duration }}, Trainer: {{ Trainer }}"
-  tasks:
+
   - name: apply task level variables
     vars: #this variable at task level override the varibale at play level
      course: DevOps with AWS
