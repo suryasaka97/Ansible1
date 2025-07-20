@@ -1,0 +1,19 @@
+- name: task level variables
+  hosts: local
+  connection: local
+  vars:
+   name: surya
+   course: ansible
+   duration: 10 hours
+   Trainer: siva kumar
+  tasks:
+  - name: apply global level variables
+    ansible.builtin.debug:
+      msg: "hello {{ name }} , course: {{ course }}, duration: {{ duration }}, Trainer: {{ Trainer }}"
+  tasks:
+  - name: apply task level variables
+    vars: #this variable at task level override the varibale at play level
+     course: DevOps with AWS
+    ansible.builtin.debug:
+      msg: "hello {{ name }} , course: {{ course }}, duration: {{ duration }}, Trainer: {{ Trainer }}"    
+      

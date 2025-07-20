@@ -1,0 +1,9 @@
+- name: calling file level variables
+  hosts: local
+  connection: local
+  vars_files: #represent all your files having in a list format
+  - course.yaml
+  tasks:
+  - name: pratcing file level variables
+    ansible.builtin.debug:
+     msg: "im {{ name }}, learning {{ course }}, duration {{ duration }}"

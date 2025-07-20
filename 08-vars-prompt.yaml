@@ -1,0 +1,16 @@
+- name: learning how to provide variables using prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: username
+    prompt: please enter your username
+    private: false
+
+  - name: password
+    prompt: please enter your password
+    private: true  
+
+  tasks:
+  - name: calling prompt variables
+    ansible.builtin.debug:
+     msg: "hello your username: {{ username }} and password: {{ password }}"
