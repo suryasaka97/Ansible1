@@ -1,4 +1,4 @@
-- name: play level variables
+- name: "play level variables"
   hosts: local
   connection: local
   vars: # in shell we refer like name=surya , $surya while calling, if it is command $(PWD)
