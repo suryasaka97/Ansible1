@@ -11,7 +11,6 @@
     ansible.builtin.debug:
      msg: "hello {{student}}, course: {{ course }}, duration: {{ duration }}, Trainer: {{ Trainer }}" # vars in ansible always surronded by ""
 
-  tasks:
   - name: "apply play level variables"
     ansible.builtin.debug:
      msg: "hello {{student}}, course: {{ course }}, duration: {{ duration }}, Trainer: {{ Trainer }}" # vars in ansible always surronded by ""  
