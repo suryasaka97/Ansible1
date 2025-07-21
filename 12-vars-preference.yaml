@@ -3,8 +3,8 @@
   connection: local
   vars:
    greeting: "hello from play level"
-  vars_files:
-  - course.yaml 
+  # vars_files:
+  # - course.yaml 
   vars_prompt:
   - name: greeting
     prompt: please enter your greeting
@@ -16,5 +16,6 @@
     ansible.builtin.debug:
      msg: "{{ greeting }}"
 
- # command level
- #task level    
+ #command level
+ #task level 
+ #file level
