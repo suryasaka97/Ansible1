@@ -5,10 +5,10 @@
    greeting: "hello from play level"
   # vars_files:
   # - course.yaml 
-  vars_prompt:
-  - name: greeting
-    prompt: please enter your greeting
-    private: false 
+  # vars_prompt:
+  # - name: greeting
+  #   prompt: please enter your greeting
+  #   private: false 
   tasks:
   - name: checking variables
     # vars:
@@ -19,3 +19,5 @@
  #command level
  #task level 
  #file level
+ #prompt level
+ #
