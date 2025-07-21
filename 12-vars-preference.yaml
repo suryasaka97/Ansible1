@@ -1,8 +1,8 @@
 - name: checking variablers preference
   hosts: local
   connection: local
-  vars:
-   greeting: "hello from play level"
+  # vars:
+  #  greeting: "hello from play level"
   # vars_files:
   # - course.yaml 
   # vars_prompt:
