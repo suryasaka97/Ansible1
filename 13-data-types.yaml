@@ -1,0 +1,22 @@
+- name: ansible datatypes
+  hosts: local
+  connection: local
+  vars:
+   course: DevOps #string
+   duration: 10 #integer
+   is_live: true #boolean
+   rating: 4.5 #float
+   tools: # list [ ]
+   - Linux
+   - shell SCRIPTING
+   - ansible
+   - Terraform
+   concepts: # dictionary {}
+    cicd: Jenkins
+    iac: terrraform
+    OS: Linux
+    cloud: AWS
+  tasks:
+  - name: data types in ansible
+    ansible.debug.builtin:
+    msg: "{{ course }}, {{ duration }}, {{ is_live }}, {{ rating }}, {{ tools }}, {{ concepts }}"
