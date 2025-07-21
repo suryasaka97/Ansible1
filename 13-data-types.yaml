@@ -18,5 +18,5 @@
     cloud: AWS
   tasks:
   - name: data types in ansible
-    ansible.debug.builtin:
+    ansible.builtin.debug:
     msg: "{{ course }}, {{ duration }}, {{ is_live }}, {{ rating }}, {{ tools }}, {{ concepts }}"
