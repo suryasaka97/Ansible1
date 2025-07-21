@@ -1,3 +1,4 @@
 student: surya
 course: DevOps
 Duration: 10 hours
+greeting: "hello from file level"
