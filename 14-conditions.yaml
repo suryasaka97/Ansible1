@@ -1,0 +1,16 @@
+- name: conditions in ansible
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: number
+    prompt: please enter the number
+    private: false
+  tasks: # write a condition to print the number
+  - name: printing the number when greater than 100
+    ansible.builtin.debug:
+     msg: " {{ number }} is greater than or equal to 100 "
+    when: number => 100 
+  - name: print number when less than 100
+    ansible.builtin.debug:
+     msg: "{{ number }} is less than 100"
+    when: number < 100 
