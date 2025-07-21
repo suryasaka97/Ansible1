@@ -19,4 +19,4 @@
   tasks:
   - name: data types in ansible
     ansible.builtin.debug:
-    msg: "{{ course }}, {{ duration }}, {{ is_live }}, {{ rating }}, {{ tools }}, {{ concepts }}"
+     msg: "{{ course }}, {{ duration }}, {{ is_live }}, {{ rating }}, {{ tools }}, {{ concepts }}"
