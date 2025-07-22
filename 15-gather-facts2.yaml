@@ -1,0 +1,9 @@
+- name: making gather facts true
+  hosts: local
+  connection: local
+  gather_facts: true
+  tasks:
+  - name: using gather_facts key word 
+    ansible.builtin.debug:
+     var: ansible_facts
+     

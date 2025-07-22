@@ -1,0 +1,11 @@
+- name: install three system packages using loops
+  hosts: backend
+  tasks: 
+  - name: use loops and item
+    ansible.builtin.package:
+     name: "{{ item }}"
+     state: present
+    loop:
+    - zip
+    - nginx
+    - mysql 

@@ -1,0 +1,12 @@
+- name: learning loops 
+  hosts: local
+  connection: local
+  tasks:
+  - name: practice loops
+    ansible.builtin.debug:
+     msg: " {{ item }}"
+    loops:
+    - veeru
+    - surya
+    - kohli
+    - kalyan 
