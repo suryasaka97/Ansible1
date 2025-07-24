@@ -1,10 +1,9 @@
 - name: practice shell vs command modules
-  hosts: local
-  become: yes
+  hosts: backend
   tasks:
   - name: shell and command modules
     #ansible.builtin.command: "ls -ltr > tmp/output.txt"
-    ansible.builtin.shell: "ls -ltr > tmp/output.txt"
+    ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
     register: shell_output
 
   - name: get shell output
