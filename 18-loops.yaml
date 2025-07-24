@@ -1,5 +1,6 @@
 - name: install three system packages using loops
   hosts: backend
+  become: yes
   tasks: 
   - name: use loops and item
     ansible.builtin.package:
