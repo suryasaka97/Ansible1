@@ -1,5 +1,6 @@
 - name: practice shell vs command modules
   hosts: backend
+  become: yes
   tasks:
   - name: shell and command modules
     #ansible.builtin.command: "ls -ltr > tmp/output.txt"
