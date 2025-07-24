@@ -1,6 +1,7 @@
 - name: installing and removing packages
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: using loops installing and removing packages
     ansible.builtin.package:
