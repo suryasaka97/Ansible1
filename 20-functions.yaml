@@ -1,0 +1,60 @@
+- name: using functions
+  hosts: local
+  connection: local
+  tasks:
+  - name: default variable
+    ansible.builtin.debug:
+     msg: "{{ gangstar | default(surya) }}"
+
+  - name: transform data from string to list
+    vars:
+     fruits: apple,banana,orange
+    ansible.builtin.debug:
+     msg: "{{ fruits | split(',') }}"   
+
+  - name: transform data from dictionary to list
+    vars:
+     teams:
+      rcb: Kohli
+      MI: Rohith
+      CSK: Dhoni
+      GT: Gill
+    ansible.builtin.debug:
+     msg: "{{ teams | dict2items }}"  
+
+
+  - name: transform data from list to dictionary
+    vars:
+     teams:
+      - key: rcb
+        value: Kohli
+      - key: MI 
+        value: Rohith
+      - key: GT  
+        value: Dhoni
+    ansible.builtin.debug:
+     msg: "{{ teams | items2dict }}"   
+
+  - name: converting letters to upper
+    vars:
+     word: "surya Pradeep SAka"
+    ansible.builtin.debug:
+     msg: "{{word}} | upper"  ##I Just gave wrong syntyax to check how it works!
+
+  - name: converting letters to lower
+    vars:
+     word: "HARE KRISHNA"  
+    ansible.builtin.debug:
+     msg: "{{word | lower}}"    
+
+  - name: Checking IP address valid or not
+    vars:
+     IP: "27.8.9.0"
+    ansible.builtin.debug:
+     msg: "{{ IP | ansible.utils.ipv4 }}"
+
+  - name: Checking IP address valid or not
+    vars:
+     IP: "347.67.86.77.0"
+    ansible.builtin.debug:
+     msg: "{{ IP | ansible.utils.ipv4 }}"   

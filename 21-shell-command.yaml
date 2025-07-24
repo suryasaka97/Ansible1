@@ -1,0 +1,26 @@
+- name: practice shell vs command modules
+  hosts: backend
+  tasks:
+  - name: shell and command modules
+    #ansible.builtin.command: "ls -ltr > tmp/output.txt"
+    ansible.builtin.shell: "ls -ltr > tmp/output.txt"
+    register: shell_output
+
+  - name: get shell output
+    ansible.builtin.debug:
+     msg: "{{ shell_output }}"  
+
+
+
+  - name: shell and command modules
+    #ansible.builtin.shell: "ls -ltr > tmp/output.txt"
+    ansible.builtin.command: "ls -ltr"
+    register: output_result
+
+  - name: print the output  
+    ansible.builtin.debug:
+     msg: "{{ output_result }}"
+
+
+
+
