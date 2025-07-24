@@ -4,7 +4,7 @@
   tasks:
   - name: learning
     ansible.builtin.debug:
-     msg: " {{ item }}"
+     msg: "{{ item }}"
     loops:
     - veeru
     - surya
