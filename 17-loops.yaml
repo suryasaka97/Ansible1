@@ -1,11 +1,11 @@
-- name: learning 
+- name: learning loops
   hosts: local
   connection: local
   tasks:
-  - name: learning
+  - name: learning loops
     ansible.builtin.debug:
      msg: "{{ item }}"
-    loops:
+    loop:
     - veeru
     - surya
     - kohli
