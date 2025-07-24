@@ -39,7 +39,8 @@
     vars:
      word: "surya Pradeep SAka"
     ansible.builtin.debug:
-     msg: "{{word}} | upper"  ##I Just gave wrong syntyax to check how it works!
+     msg: "{{ word | upper }}"  ## "{{word}} | upper" it will not throw any error, it prints: "msg": "surya Pradeep SAka | upper"
+
 
   - name: converting letters to lower
     vars:
