@@ -4,7 +4,7 @@
   tasks:
   - name: default variable
     ansible.builtin.debug:
-     msg: "{{ gangstar | default(surya) }}"
+     msg: "the gangstar is : {{ gangstar | default('surya') }}"
 
   - name: transform data from string to list
     vars:
