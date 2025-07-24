@@ -1,8 +1,8 @@
-- name: learning loops 
+- name: learning 
   hosts: local
   connection: local
   tasks:
-  - name: practice concept
+  - name: learning
     ansible.builtin.debug:
      msg: " {{ item }}"
     loops:
