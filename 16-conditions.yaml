@@ -1,8 +1,8 @@
 - name: installing packaging based on ansible_os_family
   hosts: backend
   tasks: 
-  - name: install nginx for redhat
-    ansible.builtin.dnf:
+  - name: install nginx for Debian
+    ansible.builtin.apt:
      name: nginx
      state: present
     #when: ansible_os_family == "Debian" 

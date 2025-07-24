@@ -5,5 +5,5 @@
   tasks:
   - name: using gather_facts key word 
     ansible.builtin.debug:
-     var: ansible_facts
+     var: ansible_facts  ## it will give same result si,ilar to the gather facts 1st script
      
