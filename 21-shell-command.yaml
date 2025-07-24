@@ -1,5 +1,5 @@
 - name: practice shell vs command modules
-  hosts: backend
+  hosts: local
   become: yes
   tasks:
   - name: shell and command modules
