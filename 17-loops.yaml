@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   tasks:
-  - name: practice loops
+  - name: practice loop-concept
     ansible.builtin.debug:
      msg: " {{ item }}"
     loops:
