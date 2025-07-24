@@ -1,5 +1,6 @@
 - name: installing packaging based on ansible_os_family
   hosts: backend
+  become: yes
   tasks: 
   
 
